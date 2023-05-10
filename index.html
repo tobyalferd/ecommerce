@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <title>Home page</title>
+    <style>
+        .input {
+            width: 520px;
+            height: 38px;
+            font-size: 18px;
+            font-weight: 400;
+            padding-left: 8px;
+            outline: none;
+            border: none;
+            border-radius: 7px;
+        }
+
+        .search {
+            width: fit-content;
+            height: 42px;
+            border-radius: 7px;
+            border: 1px solid rgb(163, 163, 166);
+            padding-left: 12px;
+        }
+
+        .search1 {
+            margin-left: 5px;
+            height: 42px;
+            padding: 0px 10px;
+            color: white;
+            border-radius: 7px;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: rgb(225, 126, 0);
+            border: 1px solid rgb(225, 126, 0);
+        }
+
+        .mee {
+            margin-left: 10px;
+            border-radius: 7px;
+            width: fit-content;
+            position: relative;
+
+            height: fit-content;
+            align-items: center;
+            border: 1px solid rgb(163, 163, 166);
+        }
+
+        span {
+            margin-left: 3px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .hover {
+            width: 180px;
+            height: 200px;
+            background-color: #ff0000;
+            border-radius: 10px;
+            left: -40%;
+            /* top: 0; */
+            margin-top:px;
+            position: absolute;
+            display: none;
+        }
+
+        .mee:focus-within .hover {
+            display: block;
+        }
+
+        .mee:focus-within .rotate {
+            transform: rotate(180deg);
+        }
+
+        .ope {
+            width: 150px;
+            height: 42px;
+            border: 1px solid rgb(163, 163, 166);
+            border-radius: 7px;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <section>
+        <div class="">
+            <img src="https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/w14-fashion-explosion/Brands/Defacto/1170x60.jpg"
+                alt="">
+        </div>
+        <nav class=" w-100% p-4 d-flex">
+            <img src="https://www.jumia.com.ng/" alt="">
+            <div class="search">
+                <i class="icofont-search"></i>
+                <input class="input ps-1" type="text" placeholder="Search products, brands and categories">
+            </div>
+            <div class="d-flex">
+                <button class="search1">SEARCH</button>
+                <div class="mee">
+                    <button class=" d-flex ope">
+                        <i class="icofont-user"></i>
+                        <span>Account </span>
+                        <div class="rotate"> <i class="icofont-rounded-up "></i></div>
+
+                    </button>
+                    <div class="hover">
+                       <span><a href="index.html"></a>neps</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section> -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="" width="125px" >
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+<script>
+    fetch('https://fakestoreapi.com/products')
+        .then(res => res.json())
+        .then(json => console.log(json))
+</script>
